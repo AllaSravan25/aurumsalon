@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+/* Custom CSS Styles */
+/* Add your own custom styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.scroll-item-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 2.5s, transform 1s;
+}
+.scroll-item-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.scroll-item-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 2.5s, transform 1s;
+}
+.scroll-item-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+header {
+  background-color: #f9c311;
+  color: #000;
+  padding: 1px;
+  text-align: center;
+}
+header h1 {
+  font-size: 15px;
+  margin-bottom: 0;
+  font-family: "josefin-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 3px;
+}
+nav {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content:space-around;
+}
+nav #Logo {
+  width: 100px;
+  height: 35px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 0 10px;
+}
+section {
+  
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  color: #f9c311;
+}
+#services-options {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  background-color: white;
+  transition: 0.3s;
+}
+#services-li:hover #services-options  {
+  display: block;
+  transform: scale(1.1);
+  padding: 20px 0;
+}
+#services-options li a {
+  color: black;
+}
+#services-options li a:hover {
+  color: #f9c311;
+}
+
+#carouselExampleAutoplaying {
+  z-index: 50;
+}
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#home div {
+  width: 500px;
+  margin-top: 7%;
+}
+#home img {
+  width: 455px;
+  max-width: 100%;
+  height: 455px;
+  max-height: 100%;
+}
+#home h2 {
+  font-family: 'Rubik Mono One', sans-serif;
+  letter-spacing: 10px;
+  word-spacing: -20px;
+}
+#home button {
+  background-color: #fff;
+  border: none;
+  margin-top: 5px;
+  font-family: "josefin-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#home button:hover {
+  border: 1px solid black;
+  
+}
+
+/*-------------------------  Services Section -------------------------*/
+
+
+#services {
+  text-align: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+#services h2 {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 23px;
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+
+#services img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.services-list div {
+    margin: 10px 0px;
+}
+.services-content-div {
+    position: relative;
+    background-color: #ffe2a9;
+    padding: 35px;
+}
+@font-face {
+font-family: 'MonumentExtended';
+src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+}
+.services-list h3 {
+    font-size: 25px;
+    text-align: left;
+    font-weight: 300;
+
+}
+.services-list p {
+    font-size: 37.6px;
+    max-width: 400px;
+    max-height:219px;
+    text-align: left;
+    line-height: 55px;
+    font-weight: 500;
+}
+.services-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: #f9c311;
+    border:none;
+    left: 0;
+    margin-right: 70%;
+    border-radius: 5px;
+    
+}
+
+/*--------------------- IFA SECTION --------------------------*/
+
+#IFA2023 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 170px;
+  background-color: rgba(255, 208, 255, 0.3);
+  padding: 70px 0;
+  border-radius: 20px;
+
+}
+
+#IFA2023 h3 {
+  width: 500px;
+  max-width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+#IFA2023  p {
+  width: 500px;
+  max-width: 100%;
+  font-size: 1em;
+  text-align: justify;
+  margin-top: 20px;
+}
+#IFA2023 img {
+  width: 500px;
+  max-width: 100%;
+}
+
+
+/*---------------------END -----------*/
+/*---------------------------------- Achievement Section -------------------------------------------*/
+
+#achievement {
+  display: flex;
+  margin-top: 170px;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-around;
+  background-color:#fff7e8;
+  padding: 90px;
+  border-radius: 10px;
+}
+#achievement h3 {
+  text-align: left;
+  font-weight: 600;
+}
+#achievement p {
+  max-width: 500px;
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#clientNumber {
+  font-size: 100px;
+}
+.label {
+  font-size: 25px;
+}
+
+/*---------------------------------- About Us Section --------------------------*/
+
+ 
+section#about-us {
+  margin-top: 80px;
+}
+
+section#about-us h2 {
+  font-family: 'MonumentExtended', sans-serif;
+  font-size: 23px;
+  width: 900px;
+  max-width:100%;
+  margin: 0 auto;
+}
+
+article#about-us {
+  position: relative;
+    margin-top: 50px;
+    background-color: #fff7e8;
+    background-image: url('images/aboutusimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+}
+article#about-us div {
+  /* display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 600px;
+  left: 90px;
+  top: 15%; */
+ 
+}
+article#about-us div p {
+  color: white;
+  text-align: justify;
+  font-size: 22px;
+  position: absolute;
+  width: 600px;
+  max-width: 100%;
+  left: 10%;
+  top: 25%;
+}
+
+
+/*-------------------------------- About Us END ------------------------------------*/
+
+/*-------------------------------- Footer Div --------------------------------------*/
+
+#footer-div {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:flex-start;
+  text-align: justify;
+  margin-top: 100px;
+  padding: 35px 0;
+  background-color: #ffe284;
+}
+#footer-div ul {
+  padding: 0;
+}
+#footer-div li {
+  list-style: none;
+}
+#footer-div a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+
+
+/*-------------- Responsive For 480px -------------*/
+
+@media only screen and (max-width:480px){
+
+  #services img {
+    width: 452px;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+  #IFA2023 p {
+    width: 394px;
+    max-width: 100%;
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#IFA2023 h3 {
+  width: 317px;
+  max-width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+
+article#about-us {
+  position: relative;
+  margin-top: 50px;
+  background-color: #fff7e8;
+  background-image: url(images/aboutusimg.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+article#about-us div p {
+  color: white;
+  text-align: justify;
+  font-size: 16px;
+  position: absolute;
+  width: 344px;
+  max-width: 100%;
+  left: 8%;
+  top: 49%;
+}
+
+}
+
+@media only screen and (max-width:560px){
+  #achievement {
+    display: flex;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff7e8;
+    padding: 90px 32px;
+    border-radius: 10px;
+  }
+  #IFA2023 {
+    margin-top: 10px;
+  }
+}

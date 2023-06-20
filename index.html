@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Website</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fsu1hqs.css">
+  <link rel="stylesheet" href="index.css">
+
+  <style>
+    video {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-height: 700px;
+      object-fit: cover;
+      /* Ensures the video covers the entire element */
+    }
+
+
+
+    nav img {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome To Aurum Family Salon</h1>
+  </header>
+  <div class="container-sm">
+    <nav>
+      <div>
+        <img src="images/Aurumlogoforwebsite (6).png" alt="Aurum Salon Logo" id="Logo">
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li style="position: relative;" id="services-li"><a href="#services">Services</a>
+        <ul id="services-options">
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+        </ul></li>
+        <li><a href="#about">Bridals</a></li>
+        <li><a href="#contact">Nails</a></li>
+        <li><a href="#contact">About Us</a></li>
+        <li><a href="#Salon Locator">Salon Locator</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video src="images/hero-1-video.mp4" class="d-block w-100" autoplay loop muted type="video/mp4"></video>
+      </div>
+      <div class="carousel-item">
+        <video src="images/pexels-vickie-photography-4446328-1920x1080-25fps.mp4" class="d-block w-100" autoplay loop
+          muted type="video/mp4"></video>
+      </div>
+      <div class="carousel-item">
+        <video src="images/hero-1-video.mp4" class="d-block w-100" autoplay loop muted type="video/mp4"></video>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container-sm">
+
+    <section id="services">
+      <div>
+        <h2>Aurum Salon services: Ignite Your Style, Embrace the Magic with our wizards</h2>
+      </div>
+      <article id="bridal-services" class="services-list scroll-item-left">
+        <div><img src="images/bridalimage.jpg" alt="bridal services" class="services-images"></div>
+        <div class="services-content-div">
+          <h3>Bridal Services</h2>
+            <p>Enhance Your Beauty for the Perfect Wedding Day</p>
+            <a href="contactus.html">Explore</a>
+        </div>
+      </article>
+
+      <article id="bridal-services" class="services-list scroll-item-right">
+        <div><img src="images/haircareimage.svg" alt="bridal services" class="services-images"></div>
+        <div class="services-content-div">
+          <h3>Hair Care Services</h2>
+            <p>Nurture and Transform Your Hair to Its Full Potential</p>
+            <a href="contactus.html">Explore</a>
+        </div>
+      </article>
+
+
+      <article id="bridal-services" class="services-list scroll-item-left">
+        <div><img src="images/skincareimage.svg" alt="bridal services" class="services-images"></div>
+        <div class="services-content-div">
+          <h3>Skin Care Services</h2>
+            <p>Elevate Your Skin's Health and Radiance With Us!</p>
+            <a href="contactus.html">Explore</a>
+        </div>
+      </article>
+
+
+    </section>
+
+    <!-- <header><h2>IFA 2023</h2></header> -->
+
+    <section id="IFA2023" class="scroll-item-left">
+      <!-- <h2 style="display: block;">IFA 2023</h2> -->
+      <div>
+        <h3>We're Thrilled to Anounce: <br>
+          Aurum Salon Wins the Prestigious IFA Award for Best Salon!</h3>
+        <p>We are overjoyed to share the exciting news that <strong>"Aurum Salon"</strong> has been honoured with the
+          esteemed IFA Award for Best Salon! This remarable recognition is a testament to our unwavering dedication to
+          delivering exceptional beauty services and experiences.
+        </p>
+        <p>Being Chosen as the Best Salon among fierce competition is a true honor. It signifies our commitment to
+          excellence, innovartion, and the highest standards of customer satisfaction</p>
+      </div>
+      <div>
+        <img src="images/IFA.JPG" alt="">
+      </div>
+    </section>
+
+    <section id="achievement" class="scroll-item-right">
+      <div>
+        <h3>Celebrating 20,000+ Customers: <br> Thank You For Choosing Us!</h3>
+        <p>We are absolutely thrilled and delighted to share a remarkable milestone with you today. Aurum Salon has
+          served
+          over 20,000 customers! This Achievement would not have been possible without your trust and unwaving support.
+        </p>
+      </div>
+      <div class="circle scroll-item">
+        <div id="clientNumber" class="number">0</div>
+        <div class="label">Clients</div>
+      </div>
+    </section>
+
+    <!--------------------------- About us section ------------------------------>
+
+    <section id="about-us">
+      <div>
+        <h2>About Us </h2>
+      </div>
+      <article id="about-us">
+        <div>
+          <p id="typewriter"></p>
+        </div>
+      </article>
+    </section>
+
+    <!-------------------- End Of  About Us Section ----------------------------->
+
+  </div>
+
+    <!------------------------- Footer Section----------------------------------------->
+
+  <footer>
+    <div id="footer-div">
+      <div class="footer-items" id="quick-links">
+        <ul>
+          <li><h4>Quick Links</h4></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="footer-items" id="social-media">
+        <ul>
+          <li><h4>Follow Us</h4></li>
+          <li>instagram</li>
+          <li>Whatsapp</li>
+          <li>Linked In</li>
+        </ul>
+      </div>
+      <div class="footer-items" id="contact-us">
+        <ul>
+          <li><h4>Contact Us</h4></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="footer-items" id="map-integration">
+        <ul>
+          <li><h4>Navigate</h4></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2023 XYZ Salon. All rights reserved.</p>
+  </footer>
+
+<!--------------------------- END OF FOOTER SECTION ----------------------->
+
+
+
+
+  <!------------------------- Bootstrap JS ---------------------------- -->
+
+  <script>
+
+    /*------------------------------ Scroll Animation -------------------------------*/
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const scrollItemsleft = document.querySelectorAll('.scroll-item-left');
+      const scrollItemsright = document.querySelectorAll('.scroll-item-right');
+
+      function checkScroll() {
+        scrollItemsleft.forEach(function (item) {
+          const itemTop = item.getBoundingClientRect().top + 100;
+          const windowHeight = window.innerHeight;
+
+          if (itemTop < windowHeight * 1) {
+            item.classList.add('visible');
+          }
+        });
+
+        scrollItemsright.forEach(function (item) {
+          const itemTop = item.getBoundingClientRect().top + 100;
+          const windowHeight = window.innerHeight;
+          if (itemTop < windowHeight * 1) {
+            item.classList.add('visible');
+          }
+        });
+      }
+
+      checkScroll();
+
+      // Check scroll position on scroll event
+      window.addEventListener('scroll', checkScroll);
+
+      /*------------------------------------------------  END -----------------------------------------*/
+
+
+
+      /*----------------- ---------------------------------------Achievement Animation------------------------------------------------------------------*/
+
+      const clientNumber = document.getElementById('clientNumber');
+      function animateNumber() {
+        const targetNumber = 20000;
+        const duration = 1000; // Animation duration in milliseconds
+        const frameRate = 100; // Nmber of frames per second
+
+        const increment = 100;
+        console.log(increment);
+        let currentNumber = 0;
+
+        const interval = setInterval(function () {
+          currentNumber += increment;
+          clientNumber.textContent = Math.round(currentNumber);
+
+          if (currentNumber >= targetNumber) {
+            clearInterval(interval);
+            clientNumber.textContent = targetNumber;
+          }
+        }, 1000 / frameRate);
+      }
+
+      function checkScrollForAchievement() {
+        var eventtriggered = false;
+        var ifa2023 = document.getElementById('IFA2023').getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+        if (ifa2023 > windowHeight * 1 && !eventtriggered) {
+          animateNumber()
+          eventtriggered = true;
+        }
+
+      }
+      window.addEventListener('scroll', checkScrollForAchievement);
+      checkScrollForAchievement();
+
+      /*--------------------------------- END FOR ACHIEVEMENT ANIMATION ----------------------------------*/
+
+
+      /*----------------------------------- TYPE WRITING ANIMATION FOR ABOUT US SECTION -----------------*/
+
+
+      const typewriterElement = document.getElementById('typewriter');
+      const text = '“Aurum” Salon is a one place for all your beauty & hair needs. With different Beauty & hair Services; best standards in Cleanliness and hygiene, best service techniques; Aurum Salon could draw an edge in the Beauty & Hair Market. Our services include but not limited to Nail Therapy, Manicure & Pedicure, Hair Treatment, sculpture Cut, Shaping and styling, Hair Coloring, Skin treatment and therapy, all performed by an expert and friendly team.';
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          typewriterElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 30); // Delay between each character (adjust as desired)
+        }
+      }
+      function checkScrollForTypeWriter(){
+          var eventTriggered = false;
+          var aboutus = document.getElementById('about-us').getBoundingClientRect().top;
+          var windowHeight = window.innerHeight;
+          if(aboutus >  windowHeight * 1 && !eventTriggered){
+            typeWriter()
+            eventTriggered = true;
+          }
+          
+        }
+        window.addEventListener('scroll', checkScrollForTypeWriter);
+        // Call the typewriter function
+        checkScrollForTypeWriter();
+
+        /*----------------------- END FOR TYPE WRITER ANIMATION ON ABOUT US SECTION---------------------------*/
+
+
+
+
+
+    });
+
+  </script>
+</body>
+
+</html>

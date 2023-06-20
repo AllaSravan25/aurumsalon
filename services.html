@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services at Aurum Salon</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fsu1hqs.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header>
+        <h1>Services At Aurum Salon</h1>
+    </header>
+    <div class="container-sm">
+      <nav>
+        <div>
+          <img src="images/Aurumlogoforwebsite (6).png" alt="Aurum Salon Logo" id="Logo">
+        </div>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li style="position: relative; " id="services-li"><a href="#services">Services</a>
+            <ul id="services-options">
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+            </ul>
+          </li>
+          <li><a href="bridal.html">Bridals</a></li>
+          <li><a href="#contact">About Us</a></li>
+        </ul>
+        <div class="nav-toggle">&#9776;</div>
+      </nav>
+    </div>
+    
+
+ 
+    <div id="banner">
+        <h2>Our Services</h2>
+    </div>
+    <div class="container-sm">
+        <div id="services-section">
+
+            <div>
+                <button id="to-mens-section">Men</button>
+                <button id="to-womens-section">Women</button>
+            </div>
+
+            <!-- Mens Services Section -->
+            
+            <section id="men-services-section">
+                <article class="scroll-item-left">
+                    <div>
+                        <h3>Hair Cut</h3>
+                        <p>At Aurum Salon, we understand that a great haircut can transform your style and boost your confidence. Our expert stylists are dedicated to providing exceptional grooming experiences tailored specifically for men. Whether you're looking for a classic cut or a modern, trendy style, we've got you covered.</p>
+                        <a href="contact-us">Contact Us</a>
+                    </div>
+                    <div>
+                        <img src="serviceimages/men/haircut.jpg" alt="hair cut for men">
+                    </div>
+                </article>
+                 
+                <article class="scroll-item-right">
+                    <div>
+                        <h3>Facials</h3>
+                        <p>At Aurum Salon, we believe that self-care knows no gender. That's why we've curated a range of luxurious facial treatments tailored specifically for men. Our dedicated team of skincare experts is here to help you achieve a clear, vibrant complexion while addressing your unique skincare concerns.</p>
+                        <a href="contact-us">Contact Us</a>
+                    </div>
+                    <div>
+                        <img src="serviceimages/men/facial.jpg" alt="Facial For men">
+                    </div>
+                </article>
+
+                <article class="scroll-item-left">
+                    <div>
+                        <h3>Body Polishing</h3>
+                        <p>At Aurum Salon, we believe that every man deserves to feel refreshed and rejuvenated from head to toe. That's why we offer an exclusive range of body polishing treatments designed specifically for men. Step into our tranquil oasis and let us take you on a journey of ultimate indulgence and renewal.</p>
+                        <a href="contact-us">Contact Us</a>
+                    </div>
+                    <div>
+                        <img src="serviceimages/men/bodypolishing.jpg" alt="body polishing for men">
+                    </div>
+                </article>
+
+                <article class="scroll-item-right">
+                    <div>
+                        <h3>Hair Coloring</h3>
+                        <p>At Aurum Salon, we believe that hair color is a powerful form of self-expression for men. Step outside the ordinary and embrace a vibrant, personalized look that sets you apart from the crowd. Our expert colorists are here to help you discover endless possibilities and transform your hairstyle into a work of art.</p>
+                        <a href="contact-us">Contact Us</a>
+                    </div>
+                    <div>
+                        <img src="serviceimages/men/headmassage.jpg" alt="">
+                    </div>
+                </article>
+            </section>
+            
+            <!----------------------------------- End Mens Section--------------------------- -->
+            
+            <!--------------------------------Womens services section --------------------------->
+            
+            <section id="women-services-section">
+                <h2>This is for womens section</h2>
+            </section>
+            
+            <!---------------------------- End womens Section ---------------------------->
+
+
+        </div>
+    </div>
+
+    <!------------------------- Footer Section----------------------------------------->
+
+    <footer>
+        <div id="footer-div">
+          <div class="footer-items" id="quick-links">
+            <ul>
+              <li><h4>Quick Links</h4></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Book Appointment</a></li>
+            </ul>
+          </div>
+          <div class="footer-items" id="social-media">
+            <ul>
+              <li><h4>Follow Us</h4></li>
+              <li>instagram</li>
+              <li>Whatsapp</li>
+              <li>Linked In</li>
+            </ul>
+          </div>
+          <div class="footer-items" id="contact-us">
+            <ul>
+              <li><h4>Contact Us</h4></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="footer-items" id="map-integration">
+            <ul>
+              <li><h4>Navigate</h4></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; 2023 XYZ Salon. All rights reserved.</p>
+      </footer>
+    
+    <!--------------------------- END OF FOOTER SECTION ----------------------->
+    
+    
+    <script>
+
+
+/*----------------------------------- Collapse Nav Bar------------------------------*/
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.querySelector('.nav-toggle');
+  var menu = document.querySelector('#nav-menu');
+
+  toggle.addEventListener('click', function() {
+    toggle.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+});
+
+
+
+
+
+
+/*-------------------------------------END  NAV BAR*/
+
+            /*------------------------------ Scroll Animation -------------------------------*/
+
+            document.addEventListener('DOMContentLoaded', function () {
+      const scrollItemsleft = document.querySelectorAll('.scroll-item-left');
+      const scrollItemsright = document.querySelectorAll('.scroll-item-right');
+
+      function checkScroll() {
+        scrollItemsleft.forEach(function (item) {
+          const itemTop = item.getBoundingClientRect().top + 100;
+          const windowHeight = window.innerHeight;
+
+          if (itemTop < windowHeight * 1) {
+            item.classList.add('visible');
+          }
+        });
+
+        scrollItemsright.forEach(function (item) {
+          const itemTop = item.getBoundingClientRect().top + 100;
+          const windowHeight = window.innerHeight;
+          if (itemTop < windowHeight * 1) {
+            item.classList.add('visible');
+          }
+        });
+      }
+
+      checkScroll();
+
+      // Check scroll position on scroll event
+      window.addEventListener('scroll', checkScroll);
+
+    })
+      /*------------------------------------------------  END -----------------------------------------*/
+
+      document.addEventListener('DOMContentLoaded', function () {      
+
+    const mens = document.getElementById('to-mens-section');
+    const womens = document.getElementById('to-womens-section');
+    const mensSection = document.getElementById('men-services-section');
+    const womensSection = document.getElementById('women-services-section');
+
+    mens.addEventListener('click', ()=>{
+      mensSection.style.display='block';
+      womensSection.style.display = 'none';
+      mens.style.backgroundColor = '#f9c311';
+      womens.style.backgroundColor = 'white';
+    })
+
+    womens.addEventListener('click', ()=>{
+      mensSection.style.display='none';
+      womensSection.style.display = 'block';
+      womens.style.backgroundColor = '#f9c311';
+      mens.style.backgroundColor = 'white';
+    })
+})
+    </script>
+
+
+</body>
+</html>

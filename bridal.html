@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridal Services At Aurum Family Salon</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fsu1hqs.css">
+    <link rel="stylesheet" href="bridal.css">
+</head>
+<body>
+
+      <div class="container-sm">
+        <nav>
+          <div>
+            <img src="images/Aurumlogoforwebsite (6).png" alt="Aurum Salon Logo" id="Logo">
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li style="position: relative;" id="services-li"><a href="#services">Services</a>
+            <ul id="services-options">
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+            </ul></li>
+            <li><a href="#about">Bridals</a></li>
+            <li><a href="#contact">Nails</a></li>
+            <li><a href="#contact">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container-sm " id="banner">
+        <h2 class="scroll-item-left">Your Picture Perfect Bridal Look Awaits!</h2>
+        <button class="scroll-item-left">Book Now</button>
+      </div>
+      <div class="container-sm">
+        <section>
+          <h2>Why Aurum Salon?</h2>
+          <section id="why-we-section">
+            <div class="scroll-item-left">
+              <img src="" alt="">
+              <h3>Outstanding craftsmanship</h3>
+            </div>
+
+            <div class="scroll-item-left">
+              <img src="" alt="">
+              <h3>Individualized makeup artistry</h3>
+            </div>
+
+            <div class="scroll-item-right">
+              <img src="" alt="">
+              <h3>Seasoned experts in the field</h3>
+            </div>
+
+          </section>
+
+          <article>
+            <div class="scroll-item-left">
+              <h3>Bridal Makeup</h3>
+              <p>On your special day, let our talented makeup artists at Aurum Salon enhance your natural beauty with our exceptional bridal makeup services. Using premium products and skilled techniques, we'll create a stunning look that perfectly complements your wedding attire and showcases your unique features. Trust us to make you feel like the most beautiful bride.</p>
+              <a href="">Book Appointment</a>
+            </div>  
+            <div class="image-div scroll-item-right">
+              <img src="bridalimages/weddingphoto.jpg" alt="Bridal Services At Aurum Salon" class="image">
+            </div> 
+          </article>
+
+          <article>
+            <div class="scroll-item-left">
+              <h3>Mehendi Services</h3>
+              <p>Immerse yourself in the intricate art of Mehendi with our exceptional services at Aurum Salon. Our skilled artists will create breathtaking henna designs that reflect your individual style and capture the essence of traditional beauty. Whether it's for a wedding, festival, or special celebration, our meticulous attention to detail will ensure you leave with stunning Mehendi artwork that leaves a lasting impression.</p>
+              <a href="">Book Appointment</a>
+            </div>
+            <div class="image-div scroll-item-right">
+              <img src="bridalimages/mehendiimage.jpg" alt="Mehendi Services at Aurum salon" class="image">
+            </div>
+          </article>
+        </section>
+      </div>
+<!------------------------- Footer Section----------------------------------------->
+
+<footer>
+  <div id="footer-div">
+    <div class="footer-items" id="quick-links">
+      <ul>
+        <li><h4>Quick Links</h4></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Book Appointment</a></li>
+      </ul>
+    </div>
+    <div class="footer-items" id="social-media">
+      <ul>
+        <li><h4>Follow Us</h4></li>
+        <li>instagram</li>
+        <li>Whatsapp</li>
+        <li>Linked In</li>
+      </ul>
+    </div>
+    <div class="footer-items" id="contact-us">
+      <ul>
+        <li><h4>Contact Us</h4></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="footer-items" id="map-integration">
+      <ul>
+        <li><h4>Navigate</h4></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <p>&copy; 2023 XYZ Salon. All rights reserved.</p>
+</footer>
+
+<!--------------------------- END OF FOOTER SECTION ----------------------->
+
+
+<script>
+
+      /*------------------------------ Scroll Animation -------------------------------*/
+
+      document.addEventListener('DOMContentLoaded', function () {
+      const scrollItemsleft = document.querySelectorAll('.scroll-item-left');
+      const scrollItemsright = document.querySelectorAll('.scroll-item-right');
+
+      function checkScroll() {
+        scrollItemsleft.forEach(function (item) {
+          const itemTop = item.getBoundingClientRect().top + 100;
+          const windowHeight = window.innerHeight;
+
+          if (itemTop < windowHeight * 1) {
+            item.classList.add('visible');
+          }
+        });
+
+        scrollItemsright.forEach(function (item) {
+          const itemTop = item.getBoundingClientRect().top + 100;
+          const windowHeight = window.innerHeight;
+          if (itemTop < windowHeight * 1) {
+            item.classList.add('visible');
+          }
+        });
+      }
+
+      checkScroll();
+
+      // Check scroll position on scroll event
+      window.addEventListener('scroll', checkScroll);
+
+    })
+      /*------------------------------------------------  END -----------------------------------------*/
+
+</script>
+
+</body>
+</html>
